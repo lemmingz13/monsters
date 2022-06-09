@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.header {
+    padding: 20px 0 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0 12px black;
+    background: rgba(18, 20, 29, 0.6); 
+    backdrop-filter: blur(8px)
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    img{
+        width: 350px;
+        height: 50px;
+        transition: all 0.07s linear;
+        &:hover{
+            transform: rotate(3deg) scale(1.2);
+        }
+    }
+}
+.main_menu {
+}
+.main_menu_elements{
+    display: flex;
+    li{
+        font-size: 28px;
+        padding: 0 13px;
+        font-weight: 700;
+        font-family: 'Luckiest Guy', cursive;
+        letter-spacing: 2px;
+        a{
+            color: white;
+            transition: all 0.07s linear;
+            display: inline-block;
+            &:hover{
+                color: rgb(211, 54, 54);
+                transform: rotate(5deg) scale(1.2);
+            }
+        }
+    }
+}
+
+.burger_menu {
+    display: none;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    span{
+        border: 2px solid white;
+        border-radius: 8px;
+        width: 40px;
+        height: 4px;
+        margin: 5px 0;
+        transition: all 0.2s linear;
+    }
+    &:hover{
+        transform: rotate(360deg);
+        span{
+            border: 2px solid rgb(211, 54, 54);
+        }
+    }
+}
+

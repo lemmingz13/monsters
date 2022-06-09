@@ -1,0 +1,140 @@
+@media (max-width: 1199px){
+    .main_image {
+        img{
+            width: 500px;
+        }
+    }
+    .main_text {
+        p{
+            font-size: 22px;
+            color: white;
+            line-height: 30px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (max-width: 999px){
+    .main_image {
+        img{
+            width: 400px;
+        }
+    }
+    .main_text {
+        p{
+            font-size: 20px;
+            color: white;
+            line-height: 28px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (max-width: 769px){
+    .main_image {
+        padding-right: 0px;
+        img{
+            width: 400px;
+            margin-bottom: 20px;
+        }
+    }
+    .main_text {
+        p{
+            font-size: 20px;
+            color: white;
+            line-height: 28px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    }
+    .main_container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px 30px 20px;
+    }
+    .extra_menu {
+        padding: 0px 10px 0 20px;
+        ul{
+            display: flex;
+            .menu_link{
+                color: rgb(211, 54, 54);
+                &:hover{
+                    color: rgb(211, 138, 54);
+                }
+            }
+        }
+        a{
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 20px;
+            color: white;
+            line-height: 10px;
+            letter-spacing: 2px;
+            transition: 0.1s all linear;
+            white-space: nowrap;
+            display: block;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            &:hover{
+                color: rgb(211, 138, 54);
+                transform: scale(1.1);
+            }
+        }
+        .menu_link{
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .main_information {
+        .image_monsters{
+            width: 250px;
+            margin-top: 20px;
+            transition: 0.1s all linear;
+            &:hover{
+                transform: rotate(-3deg) scale(1.1);
+            }
+        }
+    }
+    .slider {
+        width: 360px;
+    }
+    
+}
+
+@media (max-width: 586px){
+    .slider {
+        margin-top: 40px;
+        width: 280px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 25px;
+        box-shadow: 0px 0 12px black;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .main_information {
+        .image_monsters{
+            width: 230px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .extra_menu{
+        display: none;
+    }
+    .main_information {
+        .image_monsters{
+            width: 200px;
+        }
+    }
+    .main_image {
+        img{
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@media (max-width: 999px){
+    .main_menu_elements{
+        li{
+            font-size: 24px;
+            padding: 0 10px;
+            font-weight: 500;
+            font-family: 'Luckiest Guy', cursive;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (max-width: 769px){
+    .main_menu_elements{
+        display: none;
+    }
+    .logo {
+        img{
+            width: 250px;
+            height: 40px;
+        }
+    }
+    .burger_menu {
+        display: inline-block;
+        transition: 0.3s all linear;
+    }
+}
+
+@media (max-width: 480px){
+    .logo {
+        img{
+            width: 200px;
+            height: 35px;
+        }
+    }
+}

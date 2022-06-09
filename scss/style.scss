@@ -1,0 +1,17 @@
+@import "header.scss";
+@import "main.scss";
+@import "main_media.scss";
+@import "header_media.scss";
+@import "footer.scss";
+
+html {
+    scroll-behavior: smooth;
+    }
+body{
+    background-color: #12141d;
+    height: auto;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
