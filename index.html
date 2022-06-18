@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="./css/styleZero.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" href="./image/favicon.png">
+    <script defer src="./script.js"></script>
     <title>Monsters, INC.</title>
 </head>
 <body id="up">
+    
     <header class="header">
         <div class="container">
             <div class="header_wrapper">
@@ -21,8 +23,8 @@
                 <div class="main_menu">
                     <nav>
                         <ul class="main_menu_elements">
-                            <li><a href="">CORPORATION</a></li>
-                            <li><a href="">UNIVERSITY</a></li>
+                            <li><a href="./corporation/index.html">CORPORATION</a></li>
+                            <li><a href="./university/index.html">UNIVERSITY</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,8 +43,21 @@
                 </div>
             </div> 
         </div>
-        
     </header>
+    
+    <div class="burger_menu_main">
+        <div class="burger_menu_body">
+            <div class="burger_menu_list">
+                <nav>
+                    <ul class="burger_menu_elements">
+                        <li><a href="./corporation/index.html">CORPORATION</a></li>
+                        <li><a href="./university/index.html">UNIVERSITY</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
     <main class="main">
         <div class="container">
             <div class="main_wrapper">
@@ -95,7 +110,7 @@
                         <div class="main_inform_characters">
                             <h2 id="characters">Characters</h2>
                             <div class="character">
-                                <h3 class="h3_extra">James P. “Sulley” Sullivan</h3>
+                                <h3 class="h3_extra" id="sully">James P. “Sulley” Sullivan</h3>
                                 <p>James P. “Sulley” Sullivan may be the most celebrated Scarer in Monstropolis, but that doesn't make him mean. When the softhearted monster has to care for Boo, he discovers that love and laughter are more powerful than making kids scream.</p>
                                 <div class="slider middle">
                                     <div class="slides">
@@ -118,7 +133,7 @@
                                 </div>
                             </div>
                             <div class="character">
-                                <h3>Mike Wazowski</h3>
+                                <h3 id="mike">Mike Wazowski</h3>
                                 <p>Sulley's scare assistant, best friend, and roommate doesn't want any interruptions in his life—especially in his relationships. Although Mike thinks Boo is a "killing machine" at first, he later finds she's a great audience for his natural comedic talent.</p>
                                 <div class="slider middle">
                                     <div class="slides">
@@ -141,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="character">
-                                <h3>Randall Boggs</h3>
+                                <h3 id="randall">Randall Boggs</h3>
                                 <p>Able to scare even his co-workers with his chameleon abilities, Randall is one of the most wicked monsters in Monstropolis. His plan to capture the all-time scare record only scratches the surface of his sinister agenda.</p>
                                 <div class="slider middle">
                                     <div class="slides">
@@ -174,6 +189,27 @@
             </div>
         </div>
     </main>
+    <div class="modal modal_sully">
+        <div class="modal_body">
+            <img src="./image/sulley/Sulley20.jpg" alt="sully">
+            <p>James P. “Sulley” Sullivan may be the most celebrated Scarer in Monstropolis, but that doesn't make him mean. When the softhearted monster has to care for Boo, he discovers that love and laughter are more powerful than making kids scream.</p>
+            <button class="button">CLOSE</button>
+        </div>
+    </div>
+    <div class="modal modal_mike">
+        <div class="modal_body">
+            <img src="./image/mike/Mike15.jpg" alt="mike">
+            <p>Sulley's scare assistant, best friend, and roommate doesn't want any interruptions in his life—especially in his relationships. Although Mike thinks Boo is a "killing machine" at first, he later finds she's a great audience for his natural comedic talent.</p>
+            <button class="button button1">CLOSE</button>
+        </div>
+    </div>
+    <div class="modal modal_randall">
+        <div class="modal_body">
+            <img src="./image/randall/Randall12.jpg" alt="randall">
+            <p>Able to scare even his co-workers with his chameleon abilities, Randall is one of the most wicked monsters in Monstropolis. His plan to capture the all-time scare record only scratches the surface of his sinister agenda.</p>
+            <button class="button button2">CLOSE</button>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer_text" id="down">Made by Vital Hatalski 2022</div>
